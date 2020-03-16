@@ -2,9 +2,20 @@
 <html>
     <head>
      <title>Welcome To Git Training at Whirlpool</title>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
 <body>
+
+    <div class="container">
+
+    
     <h1>Welcome To Git</h1>
+    <div class="jumbotron">
+    <h3>Git commands</h3>
     <ul>
         <li>git --version</li>
         <li>git init</li>
@@ -12,19 +23,48 @@
         <li>git add</li>
         <li>git log</li>
         <li>git log -p -1</li>
+        <li>git log --pretty=oneline</li>
+        <li>git log --pretty=short</li>
+        <li>git log --pretty=full</li>
+        <li>git log --format="%H%--%an%--%ae%"</li>
+        <li>git log --stat</li>
         <li>git commit -a -m ""</li>
         <li>git diff </li>
         <li>git restore  country.html</li>
         <li>git config --list</li> 
         <li>git config --global user.name "pradeepch82"</li>
         <li>git config --global user.email "pradeepch82@gmail.com"</li>
-        
-        
+          
         
 
       
 
     </ul>
+</div>
+   
+    <hr/>
 
+    <div>
+        <pre>
+
+
+or create a new repository on the command line
+echo "# git-training-repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/pradeepch82/git-training-repo.git
+git push -u origin master
+…or push an existing repository from the command line
+git remote add origin https://github.com/pradeepch82/git-training-repo.git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+</pre>
+
+
+</div>
+</div>
+   
 </body>
  </html>
